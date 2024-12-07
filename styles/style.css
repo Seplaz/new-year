@@ -69,11 +69,11 @@
 }
 
 .left {
-  text-align: start;
+  margin-right: auto;
 }
 
 .right {
-  text-align: end;
+  margin-left: auto;
 }
 
 .content__text {
