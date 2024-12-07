@@ -143,7 +143,7 @@
 
 .gift__image.visible {
   display: block;
-  animation: slide-in 2s ease-out forwards;
+  animation: slide-in 1.4s ease-out forwards;
 }
 
 .gift__text {
@@ -163,6 +163,10 @@
     from {
     opacity: 0;
     transform: translateY(100%);
+    }
+
+    40% {
+      opacity: 0;
     }
 
     to {
