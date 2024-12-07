@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Yeseva+One&display=swap');
+
+:root {
+  --primary-color: #0C351F;
+  --secondary-color: #E2DEDB;
+  --red-color: #D53330;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  color: var(--secondary-color);
+  font-family: "Inter", serif;
+  font-weight: 400;
+  background-color: var(--primary-color);
+  min-block-size: 100vh;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.header__title {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.congrat__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.congrat__title {
+  display: flex;
+  font-family: "Yeseva One", serif;
+  font-weight: 200;
+  font-size: 25px;
+  font-style: italic;
+}
+
+.left {
+  justify-self: start;
+}
+
+.right {
+  justify-self: end;
+}
+
+.congrat__text {
+  font-weight: 200;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.hearts__container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.heart {
+  inline-size: 25px;
+}
+
+.middle {
+  animation: heartbeat 1s infinite ease-in-out;
+  inline-size: 50px;
+}
+
+@keyframes heartbeat {
+  from {
+    transform: scale(0.95);
+  }
+
+  25% {
+    transform: scale(1.1);
+  }
+
+  50% {
+    transform: scale(0.95);
+  }
+
+  75% {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(0.95);
+  }
+}
+
+.gift__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.gift__title {
+  font-family: "Yeseva One", serif;
+  font-weight: 200;
+  font-size: 25px;
+  font-style: italic;
+}
+
+.gift__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  border-radius: 20px;
+  padding: 20px;
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 15px;
+  background-color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.gift__image {
+  border-radius: 20px;
+  inline-size: 100%;
+  display: none;
+}
+
+.gift__image.visible {
+  display: block;
+  animation: slide-in 1s ease-out forwards;
+}
+
+.gift__text {
+  font-size: 20px;
+  display: none;
+}
+
+.gift__text.visible {
+  display: block;
+  animation: slide-in 2s ease-out forwards;
+}
+
+@keyframes slide-in {
+    from {
+    transform: translateY(100%);
+    opacity: 0;
+    }
+
+    50% {
+      opacity: 0;
+    }
+
+    to {
+    transform: translateY(0%);
+    opacity: 1;
+    }
+  }
+
+  .timer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .timer__title {
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  .countdown-timer {
+    font-size: 12px;
+  }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer__text {
+  font-family: "Yeseva One", serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.snow {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.snow__flake {
+  position: relative;
+  top: -1.5em;
+  color: #c1dcec;
+  animation-name: snowfall;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  will-change: transform;
+}
+
+@keyframes snowfall {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(calc(100vh + 1.5em));
+  }
+}
