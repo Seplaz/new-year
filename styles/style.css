@@ -8,7 +8,6 @@
 
 .page {
   display: flex;
-  display: -webkit-flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 0;
@@ -22,7 +21,6 @@
 
 .header {
   display: flex;
-  display: -webkit-flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -39,7 +37,6 @@
 
 .main {
   display: flex;
-  display: -webkit-flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -53,7 +50,6 @@
 
 .content__container {
   display: flex;
-  display: -webkit-flex;
   flex-direction: column;
   gap: 20px;
   inline-size: 100%;
@@ -61,7 +57,6 @@
 
 .content__title {
   display: flex;
-  display: -webkit-flex;
   font-family: "Yeseva One", serif;
   font-weight: 200;
   font-size: 25px;
@@ -69,12 +64,10 @@
 }
 
 .left {
-  margin-right: auto;
   justify-self: start;
 }
 
 .right {
-  margin-left: auto;
   justify-self: end;
 }
 
@@ -86,10 +79,9 @@
 
 .hearts__container {
   display: flex;
-  display: -webkit-flex;
   align-items: center;
-  align-self: center;
   gap: 20px;
+  align-self: center;
 }
 
 .heart {
@@ -125,7 +117,6 @@
 
 .gift__button {
   display: flex;
-  display: -webkit-flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -140,48 +131,43 @@
 }
 
 .gift__image {
+  display: none;
   border-radius: 20px;
   inline-size: 100%;
-  display: none;
 }
 
 .gift__image.visible {
   display: block;
-  animation: slide-in 1s ease-out forwards;
+  animation: slide-in 2s ease-out forwards;
 }
 
 .gift__text {
+  display: none;
+  align-self: center;
   font-weight: 300;
   font-size: 16px;
   font-style: italic;
-  align-self: center;
-  display: none;
 }
 
 .gift__text.visible {
   display: block;
-  animation: slide-in 2s ease-out forwards;
+  animation: slide-in 1s ease-out forwards;
 }
 
 @keyframes slide-in {
     from {
-    transform: translateY(100%);
     opacity: 0;
-    }
-
-    50% {
-      opacity: 0;
+    transform: translateY(100%);
     }
 
     to {
-    transform: translateY(0%);
     opacity: 1;
+    transform: translateY(0%);
     }
   }
 
   .timer {
     display: flex;
-    display: -webkit-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -202,7 +188,6 @@
 
 .footer {
   display: flex;
-  display: -webkit-flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
@@ -210,9 +195,9 @@
 
 .footer__text {
   font-family: "Yeseva One", serif;
-  font-style: italic;
   font-weight: 400;
   font-size: 25px;
+  font-style: italic;
 }
 
 .snow {
@@ -223,7 +208,7 @@
   left: 0;
   z-index: 100;
   display: flex;
-  display: -webkit-flex;
+
   justify-content: space-between;
   pointer-events: none;
 }
