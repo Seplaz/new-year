@@ -69,10 +69,12 @@
 }
 
 .left {
+  margin-right: auto;
   justify-self: start;
 }
 
 .right {
+  margin-left: auto;
   justify-self: end;
 }
 
