@@ -56,7 +56,6 @@
 }
 
 .content__title {
-  display: flex;
   font-family: "Yeseva One", serif;
   font-weight: 200;
   font-size: 25px;
