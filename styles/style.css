@@ -63,11 +63,11 @@
 }
 
 .left {
-  justify-self: start;
+  justify-self: flex-start;
 }
 
 .right {
-  justify-self: end;
+  justify-self: flex-end;
 }
 
 .content__text {
