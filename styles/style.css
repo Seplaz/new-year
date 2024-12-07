@@ -42,13 +42,18 @@
   padding: 20px;
 }
 
-.congrat__container {
+.divider {
+  inline-size: 100%;
+}
+
+.content__container {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  inline-size: 100%;
 }
 
-.congrat__title {
+.content__title {
   display: flex;
   font-family: "Yeseva One", serif;
   font-weight: 200;
@@ -64,15 +69,16 @@
   justify-self: end;
 }
 
-.congrat__text {
-  font-weight: 200;
-  font-size: 15px;
+.content__text {
+  font-weight: 300;
+  font-size: 16px;
   font-style: italic;
 }
 
 .hearts__container {
   display: flex;
   align-items: center;
+  align-self: center;
   gap: 20px;
 }
 
@@ -107,21 +113,6 @@
   }
 }
 
-.gift__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.gift__title {
-  font-family: "Yeseva One", serif;
-  font-weight: 200;
-  font-size: 25px;
-  font-style: italic;
-}
-
 .gift__button {
   display: flex;
   justify-content: center;
@@ -149,7 +140,10 @@
 }
 
 .gift__text {
-  font-size: 20px;
+  font-weight: 300;
+  font-size: 16px;
+  font-style: italic;
+  align-self: center;
   display: none;
 }
 
@@ -183,12 +177,15 @@
   }
 
   .timer__title {
-    font-weight: 400;
-    font-size: 15px;
+    font-weight: 300;
+    font-size: 16px;
+    font-style: italic;
   }
 
   .countdown-timer {
+    font-weight: 300;
     font-size: 12px;
+    font-style: italic;
   }
 
 .footer {
