@@ -10,13 +10,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   color: var(--secondary-color);
   font-family: "Noto Sans", sans-serif;
   font-weight: 400;
   background-color: var(--primary-color);
   min-block-size: 100vh;
+  max-inline-size: 375px;
 }
 
 .header {
