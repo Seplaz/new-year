@@ -60,6 +60,15 @@
   inline-size: 100%;
 }
 
+.video {
+  border-radius: 20px;
+}
+
+.video__container {
+
+  border-radius: 20px;
+}
+
 .content__title-container {
   display: flex;
   flex-direction: column;
