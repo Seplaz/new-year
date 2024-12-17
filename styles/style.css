@@ -16,7 +16,7 @@
   font-weight: 400;
   background-color: var(--primary-color);
   min-block-size: 100vh;
-  max-inline-size: 375px;
+  max-inline-size: 380px;
 }
 
 .header {
