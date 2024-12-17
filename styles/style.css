@@ -16,7 +16,7 @@
   font-weight: 400;
   background-color: var(--primary-color);
   min-block-size: 100vh;
-  max-inline-size: 100vw;
+  inline-size: 100vw;
 }
 
 .header {
@@ -317,7 +317,7 @@
 
 @media (min-width: 425px) {
   .page {
-    max-inline-size: 375px;
+    inline-size: 375px;
   }
 
 }
