@@ -16,7 +16,7 @@
   font-weight: 400;
   background-color: var(--primary-color);
   min-block-size: 100vh;
-  max-inline-size: 380px;
+  max-inline-size: 100vw;
 }
 
 .header {
@@ -313,4 +313,11 @@
   to {
     transform: rotateZ(360deg);
   }
+}
+
+@media (min-width: 425px) {
+  .page {
+    max-inline-size: 375px;
+  }
+
 }
