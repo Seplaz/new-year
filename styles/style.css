@@ -184,10 +184,40 @@
   cursor: pointer;
 }
 
-.gift__image {
+.gift__images-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.gift__background {
   display: none;
-  border-radius: 20px;
+  animation: rotate 40s infinite linear;
   inline-size: 100%;
+}
+
+.gift__background.visible {
+  display: block;
+  animation: slide-in 1.4s ease-out forwards, rotate 40s infinite linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.gift__image {
+  position: absolute;
+  inset: 0;
+  display: none;
+  margin: auto;
+  border-radius: 20px;
+  inline-size: 154px;
+  block-size: 154px;
 }
 
 .gift__image.visible {

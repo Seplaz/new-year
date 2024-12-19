@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const giftButton = document.querySelector(".gift__button");
   const giftImage = document.querySelector(".gift__image");
+  const giftBackground = document.querySelector(".gift__background");
   const giftText = document.querySelector(".gift__text");
 
   const imagePaths = [
@@ -8,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
     "./images/gift_baton.png",
     "./images/gift_noski.png",
     "./images/gift_airpods.png",
-    "./images/gift_baton.png",
   ];
 
   giftButton.addEventListener("click", (event) => {
@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     giftImage.src = randomImage;
 
     giftImage.classList.add("visible");
+    giftBackground.classList.add("visible");
     giftText.style.display = "none";
     giftButton.style.display = "none";
   });
