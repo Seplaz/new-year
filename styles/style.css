@@ -84,6 +84,7 @@
 }
 
 .content__container {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -258,6 +259,11 @@
     filter: blur(0);
     transform: translateY(0%);
   }
+}
+
+.endpage {
+  position: absolute;
+  inset: -30px -20px;
 }
 
 .timer {
