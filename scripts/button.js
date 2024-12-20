@@ -5,10 +5,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const giftText = document.querySelector(".gift__text");
 
   const imagePaths = [
-    "./images/gift_monkey.png",
-    "./images/gift_baton.png",
-    "./images/gift_noski.png",
-    "./images/gift_airpods.png",
+    "./images/gift_monkey.svg",
+    "./images/gift_1.svg",
+    "./images/gift_2.svg",
+    "./images/gift_3.svg",
   ];
 
   giftButton.addEventListener("click", (event) => {
@@ -19,7 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
       elem.classList.remove("clicked");
     }, 400);
 
-    const randomImage = imagePaths[Math.floor(Math.random() * imagePaths.length)];
+    const randomImage =
+      imagePaths[Math.floor(Math.random() * imagePaths.length)];
     giftImage.src = randomImage;
 
     giftImage.classList.add("visible");
