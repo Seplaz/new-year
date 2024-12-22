@@ -17,6 +17,7 @@
   background-color: var(--primary-color);
   min-block-size: 100vh;
   inline-size: 100vw;
+  background-image: url(../images/page_background.svg);
 }
 
 .header {
