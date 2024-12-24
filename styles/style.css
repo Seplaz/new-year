@@ -15,9 +15,9 @@
   font-family: "Noto Sans", sans-serif;
   font-weight: 400;
   background-color: var(--primary-color);
+  background-image: url(../images/page_background.svg);
   min-block-size: 100vh;
   inline-size: 100vw;
-  background-image: url(../images/page_background.svg);
 }
 
 .header {
@@ -140,6 +140,7 @@
 }
 
 .heart {
+  filter: drop-shadow(0 0 15px #d53330);
   inline-size: 25px;
 }
 
