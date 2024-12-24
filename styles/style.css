@@ -31,7 +31,6 @@
 
 .lights {
   background-image: url(../images/lights.svg);
-  background-size: 100%;
   background-repeat: no-repeat;
   background-position: top;
   animation: lights 2s infinite ease;
