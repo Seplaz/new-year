@@ -1,3 +1,21 @@
+const today = new Date();
+const targetDate = new Date(2025, 0, 1);
+
+function isButtonEnabled() {
+  return today >= targetDate;
+}
+
+window.onload = function() {
+  const button = document.getElementById('gift__button');
+  button.disabled = !isButtonEnabled();
+};
+
+setInterval(function() {
+  if (isButtonEnabled()) {
+    document.getElementById('gift__button').disabled = false;
+  }
+}, 1000);
+
 document.addEventListener("DOMContentLoaded", () => {
   const giftButton = document.querySelector(".gift__button");
   const giftImage = document.querySelector(".gift__image");
@@ -19,10 +37,8 @@ document.addEventListener("DOMContentLoaded", () => {
       elem.classList.remove("clicked");
     }, 400);
 
-    const randomImage =
-      imagePaths[Math.floor(Math.random() * imagePaths.length)];
+    const randomImage = imagePaths[Math.floor(Math.random() * imagePaths.length)];
     giftImage.src = randomImage;
-
     giftImage.classList.add("visible");
     giftBackground.classList.add("visible");
     giftText.style.display = "none";

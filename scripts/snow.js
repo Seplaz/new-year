@@ -13,4 +13,7 @@ snowflakes.forEach(snowflake => {
   snowflake.style.fontSize = getRndFloat(0.7, 1.5) + 'em'
   snowflake.style.animationDuration = getRndInteger(20, 30) + 's'
   snowflake.style.animationDelay = getRndInteger(-1, snowflakes.length / 2) + 's'
+  snowflake.style.scale = getRndFloat(0.5, 1.5);
 })
+
+
