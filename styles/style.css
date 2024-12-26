@@ -196,6 +196,7 @@
 
 .button:disabled {
   cursor: not-allowed;
+  opacity: 0.5;
 }
 
 .gift__images-container {
@@ -218,13 +219,8 @@
   from {
     transform: rotate(0);
   }
-
-  50% {
-    transform: rotate(360deg);
-  }
-
   to {
-    transform: rotate(0);
+    transform: rotate(360deg);
   }
 }
 
@@ -372,6 +368,6 @@
 
 @media (min-width: 425px) {
   .page {
-    inline-size: 375px;
+    inline-size: 390px;
   }
 }
