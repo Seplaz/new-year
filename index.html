@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon">
   </head>
-  <body class="page">  
+  <body class="page">
 
     <header class="header lights">
       <img class="header__image" src="./images/snake.svg">
@@ -70,31 +70,32 @@
         <p class="content__text text__ident">
           Я&nbsp;помню наши ночные прогулки,
           посиделки на&nbsp;набережной и&nbsp;частые хождения в&nbsp;&laquo;Мираж&raquo;.
-          <span class="blur__text">(приглашал тебя туда чуть&nbsp;ли не&nbsp;каждый день, как будто других мест нет, ха-ха)</span>
+          <span class="blur">(приглашал тебя туда чуть&nbsp;ли не&nbsp;каждый день, как будто других мест нет, ха-ха)</span>
         </p>
         <img
         src="./images/posidelki.webp"
-        class="content__image"
+        class="content__image mirazh"
+        id="mirazh"
         >
         <video class="video" autoplay loop muted playsinline>
           <source src="./video/mirazh.MP4" type="video/mp4">
         </video>
-        <img
+        <!-- <img
         src="./images/mirazh_1.webp"
-        class="content__image"
+        class="content__image mirazh"
         >
         <img
         src="./images/mirazh_2.webp"
         class="content__image"
-        >
+        > -->
         <p class="content__text text__ident">
           Помню нашу первую ночёвку в&nbsp;Маркова.
           Как мы&nbsp;готовили вкусно похавать, &laquo;подбухивали&raquo;
-          <span class="blur__text">(сколько уже времени прошло, а&nbsp;то&nbsp;вино так и&nbsp;стоит в&nbsp;холодильнике)</span>
+          <span class="blur">(сколько уже времени прошло, а&nbsp;то&nbsp;вино так и&nbsp;стоит в&nbsp;холодильнике)</span>
           и&nbsp;купались в&nbsp;бассеине.
-          <span class="blur__text">(слава богу, что сорвавшегося с&nbsp;цепи Грома удалось загнать в&nbsp;гараж)</span>
+          <span class="blur">(слава богу, что сорвавшегося с&nbsp;цепи Грома удалось загнать в&nbsp;гараж)</span>
           А&nbsp;какая в&nbsp;тот момент была атмосфера...
-          <span class="blur__text">(просто шик, на&nbsp;улице ебашит дощ, а&nbsp;мы&nbsp;в&nbsp;домике)</span>
+          <span class="blur">(просто шик, на&nbsp;улице ебашит дощ, а&nbsp;мы&nbsp;в&nbsp;домике)</span>
         </p>
         <img
         src="./images/nochevka.webp"
@@ -105,27 +106,28 @@
           как мы&nbsp;катались на&nbsp;&laquo;Экстремальном катере с&nbsp;Психом&raquo;,
           это были незабываемые впечатления на&nbsp;всю жизнь!
           Помню как до&nbsp;нас доебался мужик: &laquo;Чё&nbsp;за&nbsp;псих? Кто это сказал?&raquo;.
-          <span class="blur__text">(слава богу, что та&nbsp;тётенька нас не&nbsp;сдала)</span>
+          <span class="blur">(слава богу, что та&nbsp;тётенька нас не&nbsp;сдала)</span>
         </p>
         <img
         src="./images/kater.webp"
-        class="content__image"
+        class="content__image baikal"
+        id="baikal"
         >
-        <img
+        <!-- <img
         src="./images/baikal_1.webp"
         class="content__image"
         >
         <img
         src="./images/baikal_2.webp"
         class="content__image"
-        >
+        > -->
         <p class="content__text text__ident">
           Ещё я&nbsp;помню крутой момент,
-          <span class="blur__text">(и&nbsp;не&nbsp;единственный из&nbsp;крутых)</span>
+          <span class="blur">(и&nbsp;не&nbsp;единственный из&nbsp;крутых)</span>
           когда мы&nbsp;гуляли возле сквера и&nbsp;на&nbsp;небе были тёмные грозовые облака,
           часто сверкали молнии, как будто начинается буря и&nbsp;при всём этом,
           не&nbsp;упало ни&nbsp;одной капли.
-          <span class="blur__text">(охуеть&nbsp;да? первый раз такое видел)</span>
+          <span class="blur">(охуеть&nbsp;да? первый раз такое видел)</span>
         </p>
         <img
         src="./images/groza.webp"
@@ -135,10 +137,10 @@
           Как&nbsp;же всё таки охуенно, что ты&nbsp;появилась в&nbsp;моей жизни!
           Спасибо тебе большое за&nbsp;всю любовь, которую ты&nbsp;мне даришь, за&nbsp;то,
           что терпишь мои недостатки,
-          <span class="blur__text">(похуй, терпи)</span>
-          <span class="blur__text">(но&nbsp;если всё таки ты&nbsp;не&nbsp;&laquo;терпишь&raquo; и&nbsp;тебя всё устраивает, то&nbsp;это вдвойне охуенно)</span>
+          <span class="blur">(похуй, терпи)</span>
+          <span class="blur">(но&nbsp;если всё таки ты&nbsp;не&nbsp;&laquo;терпишь&raquo; и&nbsp;тебя всё устраивает, то&nbsp;это вдвойне охуенно)</span>
           также спасибо тебе за&nbsp;то, что перебинтовывала мне гипс,
-          <span class="blur__text">(помнишь как мы&nbsp;придумали, что я&nbsp;&laquo;Гипс&raquo;?)</span>
+          <span class="blur">(помнишь как мы&nbsp;придумали, что я&nbsp;&laquo;Гипс&raquo;?)</span>
           ты&nbsp;делала это так аккуратно и&nbsp;профессионально,
           а&nbsp;самое главное бережно, что я&nbsp;с&nbsp;тебя не&nbsp;могу...
         </p>
@@ -190,9 +192,6 @@
           <h2 class="content__title left">Немножечко</h2>
           <h2 class="content__title right">кринжатины</h2>
         </div>
-        <!-- <p class="content__text text__ident">
-          Хахахахахахахахахахахаха
-        </p> -->
         <video class="video" autoplay loop muted playsinline>
           <source src="./video/cringe.MOV">
         </video>
@@ -307,7 +306,8 @@
         >
       </div>
     </div>
-    
+
+    <script src="./scripts/slideshow.js"></script>
     <script src="./scripts/countdown.js"></script>
     <script src="./scripts/button.js"></script>
     <script src="./scripts/snow.js"></script>

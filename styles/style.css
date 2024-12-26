@@ -125,12 +125,12 @@
   text-indent: 10%;
 }
 
-.blur__text {
+.blur {
   filter: blur(5px);
   transition: filter 0.25s ease-in-out;
 }
 
-.blur__text:hover {
+.blur:hover {
   filter: blur(0);
   transition: filter 0.25s ease-in-out;
 }
@@ -179,6 +179,31 @@
   inline-size: 100%;
 }
 
+.mirazh {
+  animation: photoChange 5s infinite ease-in-out;
+}
+
+.baikal {
+  animation: photoChange 5s infinite ease-in-out;
+}
+
+@keyframes photoChange {
+  from {
+    opacity: 0;
+    filter: blur(5px);
+  }
+
+  50% {
+    opacity: 1;
+    filter: blur(0);
+  }
+
+  to {
+    opacity: 0;
+    filter: blur(5px);
+  }
+}
+
 .button {
   display: flex;
   justify-content: center;
@@ -195,8 +220,8 @@
 }
 
 .button:disabled {
-  cursor: not-allowed;
   opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .gift__images-container {
