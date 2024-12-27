@@ -35,7 +35,7 @@
   background-image: url(../images/lights_1_opt.svg);
   background-repeat: no-repeat;
   background-position: top;
-  animation: lights 4s infinite ease;
+  animation: lights 5s infinite ease;
 }
 
 @keyframes lights {
@@ -95,7 +95,21 @@
 }
 
 iframe {
-  box-shadow: 0 0 10px 0 #ffffff80;
+  animation: glowing 5s infinite ease-in-out;
+}
+
+@keyframes glowing {
+  from {
+    box-shadow: 0 0 10px 0 #ffffffff;
+  }
+
+  50% {
+    box-shadow: 0 0 10px 0 #ffffff00;
+  }
+  
+  to {
+    box-shadow: 0 0 10px 0 #ffffffff;
+  }
 }
 
 .content__container {
@@ -228,6 +242,7 @@ iframe {
   font-size: 15px;
   background-color: var(--secondary-color);
   cursor: pointer;
+  animation: glowing 5s infinite ease-in-out;
 }
 
 .button:disabled {
