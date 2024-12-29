@@ -95,6 +95,42 @@
   inline-size: 100%;
 }
 
+.сongratulation {
+  display: none;
+}
+
+.сongratulation.visible {
+  display: flex;
+  animation: slide-in 1.4s ease-out forwards;
+}
+
+.remember {
+  display: none;
+}
+
+.remember.visible {
+  display: flex;
+  animation: slide-in 1.4s ease-out forwards;
+}
+
+.support {
+  display: none;
+}
+
+.support.visible {
+  display: flex;
+  animation: slide-in 1.4s ease-out forwards;
+}
+
+.last {
+  display: none;
+}
+
+.last.visible {
+  display: flex;
+  animation: slide-in 1.4s ease-out forwards;
+}
+
 .content__title-container {
   display: flex;
   flex-direction: column;
@@ -180,11 +216,16 @@
 }
 
 .mirazh {
-  animation: photoChange 5s infinite ease-in-out;
+  transition: opacity 5s ease-in-out, filter 5s ease-in-out;
+  will-change: opacity, filter;
 }
 
 .baikal {
-  animation: photoChange 5s infinite ease-in-out;
+  transition: opacity 5s ease-in-out, filter 5s ease-in-out;
+}
+
+.photo-change {
+  animation: photoChange 5s infinite;
 }
 
 @keyframes photoChange {
@@ -212,31 +253,18 @@
   border: none;
   border-radius: 20px;
   padding: 20px;
+  box-shadow: 0 0 10px 0 #e2dedbff;
   color: var(--primary-color);
   font-weight: 700;
   font-size: 15px;
   background-color: var(--secondary-color);
   cursor: pointer;
-  animation: glowing 5s infinite ease-in-out;
+  inline-size: 100%;
 }
 
-.button:disabled {
+.gift__button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
-}
-
-@keyframes glowing {
-  from {
-    box-shadow: 0 0 10px 0 #e2dedbff;
-  }
-
-  50% {
-    box-shadow: 0 0 10px 0 #e2dedb00;
-  }
-  
-  to {
-    box-shadow: 0 0 10px 0 #e2dedbff;
-  }
 }
 
 .gift__images-container {
