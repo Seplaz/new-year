@@ -5,7 +5,7 @@ function getCurrentDate() {
 
 // Функция для получения количества миллисекунд до Нового года
 function getMillisecondsUntilNewYear() {
-  const newYear = new Date(2024, 11, 31); // Год и дата Нового года
+  const newYear = new Date(2025, 0, 1); // Год и дата Нового года
   return Math.abs(newYear.getTime() - getCurrentDate().getTime());
 }
 
