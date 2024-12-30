@@ -12,12 +12,6 @@ function changeMirazhImage() {
   if (currentMirazhImage >= mirazhImages.length) {
     currentMirazhImage = 0;
   }
-
-  // Синхронизация с анимацией
-  setTimeout(function () {
-    document.getElementById("mirazh").classList.add("photo-change");
-  }, 500); // Задержка перед началом анимации
-
   setTimeout(changeMirazhImage, 5000);
 }
 
